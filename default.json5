@@ -13,6 +13,9 @@
     ":semanticCommitScopeDisabled",
     ":configMigration"
   ],
+  "ignorePresets": [
+    ":semanticPrefixFixDepsChoreOthers"
+  ],
   "minimumReleaseAge": "1 days",
   "internalChecksFilter": "strict",
   "lockFileMaintenance": {
