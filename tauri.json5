@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config for Tauri projects",
+  "packageRules": [
+    {
+      "groupName": "Tauri packages",
+      "groupSlug": "tauri",
+      "extends": [
+        "monorepo:tauri"
+      ],
+      "matchPackageNames": [
+        "@tauri-apps/**",
+        "tauri",
+        "tauri-*",
+        "!tauri-specta"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "specta",
+        "specta-*",
+        "tauri-specta"
+      ],
+      "groupName": "tauri-specta dependencies",
+      "groupSlug": "tauri-specta"
+    }
+  ]
+}

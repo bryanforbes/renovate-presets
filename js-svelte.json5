@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "Svelte packages",
+      "groupSlug": "svelte",
+      "matchPackageNames": [
+        "svelte",
+        "svelte-*",
+        "@sveltejs/**",
+        "typescript-svelte-plugin"
+      ]
+    }
+  ]
+}

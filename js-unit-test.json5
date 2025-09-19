@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config for JavaScript unit testing",
+  "packageRules": [
+    {
+      "groupName": "JS unit test packages",
+      "groupSlug": "js-unit-test",
+      "extends": [
+        "packages:jsUnitTest"
+      ],
+      "matchPackageNames": [
+        "webdriverio",
+        "@types/chai-**"
+      ]
+    }
+  ]
+}

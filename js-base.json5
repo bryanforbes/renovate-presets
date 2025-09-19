@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Base Renovate config for JavaScript projects",
+  "extends": [
+    "github>bryanforbes/renovate-presets:default.json5",
+    "helpers:disableTypesNodeMajor",
+    "npm:unpublishSafe"
+  ],
+  "ignoreDeps": [
+    "node"
+  ]
+}

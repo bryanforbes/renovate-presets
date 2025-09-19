@@ -1,0 +1,41 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Base Renovate config for Python projects",
+  "extends": [
+    "github>bryanforbes/renovate-presets:default.json5",
+    ":enablePreCommit"
+  ],
+  "ignoreDeps": [
+    "python"
+  ],
+  "packageRules": [
+    // prioritize dependencies and extras
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "extras"
+      ],
+      "prPriority": 5
+    },
+    // pin dev dependencies
+    {
+      "matchDepTypes": [
+        "dev",
+        "dev-dependencies"
+      ],
+      "rangeStrategy": "pin"
+    },
+    // group non-major dev dependencies into one PR
+    {
+      "groupName": "dev dependencies (non-major)",
+      "groupSlug": "dev-dependencies",
+      "extends": [
+        "group:allNonMajor"
+      ],
+      "matchDepTypes": [
+        "dev",
+        "dev-dependencies"
+      ]
+    }
+  ]
+}

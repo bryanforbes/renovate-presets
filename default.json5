@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Base renovate config",
+  "extends": [
+    "config:recommended",
+    "schedule:daily",
+    ":assignee(bryanforbes)",
+    ":timezone(America/Chicago)",
+    ":combinePatchMinorReleases",
+    ":enableVulnerabilityAlerts",
+    ":semanticCommits",
+    ":semanticPrefixChore",
+    ":semanticCommitScopeDisabled",
+    ":configMigration"
+  ],
+  "minimumReleaseAge": "1 days",
+  "internalChecksFilter": "strict",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": [
+      "schedule:daily"
+    ]
+  }
+}

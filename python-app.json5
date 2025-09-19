@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Base Renovate config for Python applications",
+  "extends": [
+    "github>bryanforbes/renovate-presets:python-base.json5"
+  ],
+  "rangeStrategy": "pin"
+}

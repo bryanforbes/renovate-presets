@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config for JavaScript linters and formatters",
+  "packageRules": [
+    {
+      "groupName": "linters",
+      "extends": [
+        "packages:linters"
+      ],
+      "matchPackageNames": [
+        "@types/eslint-**",
+        "@vitest/eslint-plugin",
+        "globals",
+        "prettier-plugin-**",
+        "@prettier/plugin-**",
+        "husky",
+        "@commitlint/**",
+        "lint-staged",
+        "@types/lint-staged"
+      ]
+    }
+  ]
+}
