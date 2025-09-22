@@ -30,7 +30,7 @@
       "groupName": "dev dependencies (non-major)",
       "groupSlug": "dev-dependencies",
       "extends": [
-        "group:allNonMajor"
+        "github>bryanforbes/renovate-presets:group-all-non-major.json5"
       ],
       "matchDepTypes": [
         "dev",
