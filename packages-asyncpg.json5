@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "asyncpg projects",
+  "matchPackageNames": [
+    "asyncpg",
+    "asyncpg-stubs"
+  ]
+}

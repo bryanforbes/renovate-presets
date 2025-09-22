@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group asyncpg projects",
+  "packageRules": [
+    {
+      "extends": [
+        "github>bryanforbes/renovate-presets:packages-asyncpg.json5"
+      ],
+      "groupName": "asyncpg packages",
+      "groupSlug": "asyncpg"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group Svelte packages",
+  "packageRules": [
+    {
+      "extends": [
+        "github>bryanforbes/renovate-presets:packages-svelte.json5"
+      ],
+      "groupName": "Svelte packages",
+      "groupSlug": "svelte"
+    }
+  ]
+}

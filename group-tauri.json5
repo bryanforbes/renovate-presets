@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group Tauri packages",
+  "packageRules": [
+    {
+      "extends": [
+        "github>bryanforbes/renovate-presets:packages-tauri.json5"
+      ],
+      "groupName": "Tauri packages",
+      "groupSlug": "tauri"
+    },
+    {
+      "extends": [
+        "github>bryanforbes/renovate-presets:packages-tauri-specta.json5"
+      ],
+      "groupName": "tauri-specta dependencies",
+      "groupSlug": "tauri-specta"
+    }
+  ]
+}

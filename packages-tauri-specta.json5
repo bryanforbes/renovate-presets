@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "tauri-specta packages",
+  "matchPackageNames": [
+    "specta",
+    "specta-*",
+    "tauri-specta"
+  ]
+}

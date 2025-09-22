@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Tauri packages",
+  "extends": [
+    "monorepo:tauri"
+  ],
+  "matchPackageNames": [
+    "@tauri-apps/**",
+    "tauri",
+    "tauri-*"
+  ]
+}

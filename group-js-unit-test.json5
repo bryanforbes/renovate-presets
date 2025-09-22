@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group JavaScript unit testing packages",
+  "packageRules": [
+    {
+      "extends": [
+        "github>bryanforbes/renovate-presets:packages-js-unit-test.json5"
+      ],
+      "groupName": "JS unit test packages",
+      "groupSlug": "js-unit-test"
+    }
+  ]
+}
