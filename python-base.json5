@@ -29,8 +29,12 @@
     {
       "groupName": "dev dependencies (non-major)",
       "groupSlug": "dev-dependencies",
-      "extends": [
-        "github>bryanforbes/renovate-presets:group-all-non-major.json5"
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
       ],
       "matchDepTypes": [
         "dev",
