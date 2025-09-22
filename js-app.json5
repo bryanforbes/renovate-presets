@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Renovate config for JavaScript apps",
   "extends": [
-    "github>bryanforbes/renovate-presets:js-base.json5",
-    "config:js-app"
+    "config:js-app",
+    "github>bryanforbes/renovate-presets:js-base.json5"
   ]
 }
