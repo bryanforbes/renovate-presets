@@ -3,6 +3,6 @@
   "description": "Renovate config for JavaScript apps",
   "extends": [
     "config:js-app",
-    "github>bryanforbes/renovate-presets:js-base.json5"
+    "github>bryanforbes/renovate-presets:config-js-default.json5"
   ]
 }
