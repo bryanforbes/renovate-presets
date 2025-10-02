@@ -6,6 +6,7 @@
   ],
   "matchPackageNames": [
     "webdriverio",
-    "@types/chai-**"
+    "@types/chai-**",
+    "!@vitest/eslint-plugin"
   ]
 }
