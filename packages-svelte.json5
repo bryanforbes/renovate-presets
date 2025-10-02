@@ -5,6 +5,7 @@
     "svelte",
     "svelte-*",
     "@sveltejs/**",
-    "typescript-svelte-plugin"
+    "typescript-svelte-plugin",
+    "@lucide/svelte"
   ]
 }
