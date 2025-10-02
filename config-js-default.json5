@@ -3,10 +3,12 @@
   "description": "Base Renovate config for JavaScript projects",
   "extends": [
     "github>bryanforbes/renovate-presets:config-default.json5",
-    "helpers:disableTypesNodeMajor",
-    "npm:unpublishSafe"
+    "helpers:disableTypesNodeMajor"
   ],
   "ignoreDeps": [
     "node"
-  ]
+  ],
+  "npm": {
+    "minimumReleaseAge": "3 days"
+  }
 }
