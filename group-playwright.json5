@@ -7,6 +7,13 @@
         "github>bryanforbes/renovate-presets:packages-playwright.json5"
       ],
       "groupName": "Playwright"
+    },
+    {
+      "description": "Disable minimum release age checks for playwright docker image",
+      "matchPackageNames": [
+        "mcr.microsoft.com/playwright"
+      ],
+      "minimumReleaseAge": null
     }
   ]
 }
