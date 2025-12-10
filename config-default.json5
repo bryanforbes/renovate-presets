@@ -75,7 +75,7 @@
       "matchJsonata": [
         "isLockFileMaintenance = true"
       ],
-      "semanticCommitScope": "lock"
+      "semanticCommitScope": "dev"
     }
   ]
 }
