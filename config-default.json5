@@ -10,7 +10,6 @@
     ":enableVulnerabilityAlerts",
     ":semanticCommits",
     ":semanticPrefixChore",
-    ":semanticCommitScopeDisabled",
     ":configMigration"
   ],
   "ignorePresets": [
@@ -23,5 +22,60 @@
     "extends": [
       "schedule:daily"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "*"
+      ],
+      "semanticCommitScope": "dev"
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "require"
+      ],
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchDatasources": [
+        "maven"
+      ],
+      "matchDepTypes": [
+        "compile",
+        "provided",
+        "runtime",
+        "system",
+        "import",
+        "parent"
+      ],
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchDepTypes": [
+        "project.dependencies",
+        "project.optional-dependencies"
+      ],
+      "matchManagers": [
+        "pep621"
+      ],
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "extras"
+      ],
+      "matchManagers": [
+        "poetry"
+      ],
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchJsonata": [
+        "isLockfileUpdate = true"
+      ],
+      "semanticCommitScope": "lock"
+    }
+  ]
 }
