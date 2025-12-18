@@ -21,7 +21,8 @@
     {
       "matchDepTypes": [
         "dev",
-        "dev-dependencies"
+        "dev-dependencies",
+        "dependency-groups"
       ],
       "rangeStrategy": "pin"
     },
@@ -38,7 +39,8 @@
       ],
       "matchDepTypes": [
         "dev",
-        "dev-dependencies"
+        "dev-dependencies",
+        "dependency-groups"
       ]
     }
   ]
