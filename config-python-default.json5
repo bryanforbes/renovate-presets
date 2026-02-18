@@ -5,10 +5,17 @@
     "github>bryanforbes/renovate-presets:config-default.json5",
     ":enablePreCommit"
   ],
-  "ignoreDeps": [
-    "python"
-  ],
   "packageRules": [
+    {
+      "matchPackageNames": [
+        "python"
+      ],
+      "matchManagers": [
+        "poetry",
+        "github-actions"
+      ],
+      "enabled": false
+    },
     // prioritize dependencies and extras
     {
       "matchDepTypes": [
